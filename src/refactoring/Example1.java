@@ -17,15 +17,19 @@ public class Example1 {
     };
 
     void printOwing() {
-        double outstanding = 0.0;
+
         String name = "Test";
         printBanner();
+        double outstanding = getOutstanding();
+        printDetail(outstanding, name);
+    }
 
+    private double getOutstanding() {
+        double outstanding = 0.0;
         for (Order order : orders) {
             outstanding += order.getAmount();
         }
-
-        printDetail(outstanding, name);
+        return outstanding;
     }
 
     private void printDetail(double outstanding, String name) {
