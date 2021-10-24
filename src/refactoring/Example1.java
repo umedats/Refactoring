@@ -15,20 +15,28 @@ public class Example1 {
             add(new Order(30));
         }
     };
-    
+
     void printOwing() {
         double outstanding = 0.0;
         String name = "Test";
-        System.out.println("********************");
-        System.out.println("*** Customer Owe ***");
-        System.out.println("********************");
+        printBanner();
 
         for (Order order : orders) {
             outstanding += order.getAmount();
         }
 
+        printDetail(outstanding, name);
+    }
+
+    private void printDetail(double outstanding, String name) {
         System.out.println("name: " + name);
         System.out.println("amount: " + outstanding);
+    }
+
+    private void printBanner() {
+        System.out.println("********************");
+        System.out.println("*** Customer Owe ***");
+        System.out.println("********************");
     }
 
     public class Order {
