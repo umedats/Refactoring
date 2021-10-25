@@ -4,15 +4,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Example2Test {
+class ReplaceTempWithQueruTest {
 
     @Test
     void getPrice() {
-        double actual = new Example2().getPrice(3, 20.0);
+        double actual = new ReplaceTempWithQueru().getPrice(3, 20);
         double expected = 58.8;
         assertEquals(expected, actual);
 
-        actual = new Example2().getPrice(300, 20.0);
+        actual = new ReplaceTempWithQueru().getPrice(300, 20);
         expected = 5700;
         assertEquals(expected, actual);
     }

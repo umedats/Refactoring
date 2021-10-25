@@ -8,7 +8,7 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Example1Test {
+class ExtractMethodTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -22,7 +22,7 @@ class Example1Test {
 
     @Test
     void printOwing() {
-        new Example1().printOwing();
+        new ExtractMethod().printOwing();
         assertEquals("********************\n" +
                 "*** Customer Owe ***\n" +
                 "********************\n" +

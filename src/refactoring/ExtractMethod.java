@@ -3,9 +3,9 @@ package refactoring;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Example1 {
+public class ExtractMethod {
     public static void main(String[] args) {
-        Example1 test = new Example1();
+        ExtractMethod test = new ExtractMethod();
         test.printOwing();
     }
 
