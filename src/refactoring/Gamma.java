@@ -19,11 +19,15 @@ public class Gamma {
     int compute() {
         int importantValue1 = (inputVal * quantity);
         int importantValue2 = (inputVal * yearToDate) + 100 + replaceMethod.delta();
-        if ((yearToDate - importantValue1) > 100) {
-            importantValue2 -= 20;
-        }
+        importantThing();
         int importantValue3 = importantValue2 * 7;
         //...omit
         return importantValue3 - 2 * importantValue1;
+    }
+
+    void importantThing() {
+        if ((yearToDate - importantValue1) > 100) {
+            importantValue2 -= 20;
+        }
     }
 }
